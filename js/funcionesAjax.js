@@ -65,7 +65,7 @@ function Mostrar(queMostrar)
 	var funcionAjax=$.ajax({
 		url:"nexo.php",
 		type:"post",
-		data:{queHacer:queMostrar}
+		data:{queHacer:queMostrar} //esto es javascript, esta del lado del cliente
 	});
 	funcionAjax.done(function(retorno){
 		$("#principal").html(retorno);
